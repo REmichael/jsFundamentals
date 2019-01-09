@@ -76,7 +76,7 @@ if(age <= 17) {
     console.log('Yay! You can vote!')
 } else if (age =21) {
     console.log('Yay! You can drink!')
-}else
+}else {
 
 }
 
