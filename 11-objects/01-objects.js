@@ -42,3 +42,86 @@ let str = netflix.season1.seasonInfo.episodeInfo[3].episodeName
 //console.log('episode name', netflix.season1.seasonInfo.episodeInfo[0].episodeName)
 console.log(netflix.season1.seasonInfo.episodeInfo[3].episodeName, `${'is my favorite episode of this season'}`)
 
+
+
+let spaceJam = {
+    toonSquad: {
+      human: 'Michael Jordan',
+      rabbit1: 'Bugs Bunny',
+      rabbit2: 'Lola Bunny',
+      duck: 'Daffy Duck',
+      tDevil: 'Tasmanian Devil',
+      bird: 'Tweety',
+      cat: 'Sylvester',
+      pig: 'Porky Pig'
+    },
+    monstars: {
+      0: 'Bupkus',
+      1: 'Bang',
+      2: 'Nawt',
+      3: 'Pound',
+      4: 'Blanko'
+    },
+    nbaPlayers: {
+      phoenixSuns: 'Charles Barkley',
+      newJerseyNets: 'Shawn Bradley',
+      newYorkNicks: 'Patrick Ewing',
+      charlotteHornets1: 'Larry Johnson',
+      charlotteHornets2: 'Muggsy Bogues'
+    }
+  }
+  
+  
+  //HOW TO GET THE TEAM NAMES//
+  console.log(Object.values(spaceJam.nbaPlayers))
+  
+  //HOW TO GET THE TEAM NAMES//
+  console.log(Object.keys(spaceJam.nbaPlayers))
+
+  //THIS WILL GET YOU THE PLAYERS
+let player = Object.keys(spaceJam.nbaPlayers)
+  console.log(players)
+  console.log(Object.values(spaceJam.nbaPlayers)[2])
+
+  
+  let garden = {
+      vegetable: 'zucchini',
+      flower: 'sun flower',
+      fruit: 'grape',
+      water: true,
+      sun: true,
+      size: 10
+  };
+
+  //THIS WILL GET YOU "ZUCCHINI"
+  //console.log(garden.vegetable)
+  
+  
+  //SQUARE BRACKET NOTATION
+  let x = 'vegetable';
+ // console.log(garden[x])  WILL ALSO GET YOU "ZUCCHINI"
+
+  let baking= {}
+  baking['zucchini'] = "lets bake some bread"
+  console.log(baking[garden[x]]) 
+
+
+
+  let garden = {
+    vegetable: 'zucchini',
+    flower: 'sun flower',
+    fruit: 'grape',
+    water: true,
+    sun: true,
+    size: 10
+};
+
+  let key = 'water';
+
+   Object.keys(garden).forEach(g => {
+       if (g == x){
+           console.log('Yay, its', garden[x])
+       } else {
+           console.log("There's no water here =(")
+       }
+  })
