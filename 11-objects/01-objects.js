@@ -72,7 +72,7 @@ let spaceJam = {
   }
   
   
-  //HOW TO GET THE TEAM NAMES//
+  //HOW TO GET THE PLAYER NAMES//
   console.log(Object.values(spaceJam.nbaPlayers))
   
   //HOW TO GET THE TEAM NAMES//
@@ -94,7 +94,7 @@ let player = Object.keys(spaceJam.nbaPlayers)
   };
 
   //THIS WILL GET YOU "ZUCCHINI"
-  //console.log(garden.vegetable)
+  console.log(garden.vegetable)
   
   
   //SQUARE BRACKET NOTATION
@@ -125,3 +125,24 @@ let player = Object.keys(spaceJam.nbaPlayers)
            console.log("There's no water here =(")
        }
   })
+
+  var bobAlcorn = {
+    //3                    //4
+    name             : "Bob Alcorn",
+    age              : 59,
+    vocation        : "Chief Operating Officer",
+    isRetired        : false
+};
+console.log(bobAlcorn);
+
+
+let player = {
+
+  username  : "Luka",
+  power     : 100,
+  toughness : "metal"
+};
+console.log(player.username)
+
+
+};
